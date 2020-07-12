@@ -9,6 +9,14 @@ const routes: Routes = [
   {
     path: '',
     loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: 'bloodbank',
+    loadChildren: () => import('./bloodbank/bloodbank.module').then( m => m.BloodbankPageModule)
+  },
+  {
+    path: 'op',
+    loadChildren: () => import('./op/op.module').then( m => m.OPPageModule)
   }
 ];
 @NgModule({
