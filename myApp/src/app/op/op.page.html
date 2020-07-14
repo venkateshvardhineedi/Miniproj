@@ -3,10 +3,24 @@
     <ion-buttons slot="start">
       <ion-back-button routerLink="/members/tab2">BACK</ion-back-button>
     </ion-buttons>
-    <ion-title></ion-title>
+    <ion-title class="ion-text-center">Schedule Appointment</ion-title>
   </ion-toolbar>
 </ion-header>
 <ion-content>
-  <h1>Hello World</h1>
-  <google-map></google-map>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-item>
+          <ion-input type="text" placeholder="Name"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-select placeholder="Select One">
+            <ion-select-option value="F">Fever</ion-select-option>
+            <ion-select-option value="H">Headache</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+    
 </ion-content>

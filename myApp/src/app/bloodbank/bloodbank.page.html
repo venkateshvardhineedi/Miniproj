@@ -6,6 +6,16 @@
     <ion-title></ion-title>
   </ion-toolbar>
 </ion-header>
-<ion-content>
-  <ion-grid></ion-grid>
+<ion-content >
+  <div id="poidiv">
+    
+  </div>
+
+<div *ngFor="let x of pois" >
+  <ion-label>
+    <h2> {{x.name}} </h2>
+    <h2> {{x.rating}} </h2>
+    </ion-label>
+</div>
+
 </ion-content>
