@@ -1,27 +1,11 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      
+    
     </ion-title>
   </ion-toolbar>
 </ion-header>
 <ion-content [fullscreen]="true">
-  <!--<div class="text-center">
-    <ion-row>
-      <ion-col class="ion-text-center">
-        <ion-list>
-          
-            <ion-avatar slot="end">
-              <ion-img src="https://dbcti.com/image/mangal.png"></ion-img>
-            </ion-avatar>
-            <ion-label>
-              User Name
-            </ion-label>
-          
-        </ion-list>
-      </ion-col>
-    </ion-row>
-  </div>-->
   <div>
     <ion-slides #slides pager="true" [options]="slideOpts">
       <ion-slide>
@@ -38,34 +22,100 @@
   <div>
     <ion-grid>
       <ion-row>
-        <ion-col size="6" class="ion-padding">
-        <div  routerLink="/bloodbank" class="imgTile">
-         <ion-img src="https://www.nirujahealthtech.com/wp-content/uploads/2019/11/blood-donation-icon-png.png" class="ContentTiles"></ion-img>
+        <ion-col size="6">
+          <div>
+            <ion-card routerLink="/bloodbank" color="light">
+            <ion-row>
+              <ion-col class="ion-text-center">
+                <ion-img src="https://www.nirujahealthtech.com/wp-content/uploads/2019/11/blood-donation-icon-png.png" class="ContentTiles"></ion-img>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col class="ion-text-center">
+                <ion-label>Blood bank</ion-label>
+              </ion-col>
+            </ion-row>
+          </ion-card>
         </div>
         </ion-col>
-        <ion-col size="6" class="ion-padding">
-          <div routerLink="/op" class="imgTile">
-         <ion-img src="https://cdn2.iconfinder.com/data/icons/male-users-2/512/13-512.png" class="ContentTiles"></ion-img>
+        <ion-col size="6">
+          <div>
+            <ion-card routerLink="/op" color="light">
+            <ion-row>
+              <ion-col class="ion-text-center">
+                <ion-img src="https://cdn2.iconfinder.com/data/icons/male-users-2/512/13-512.png" class="ContentTiles"></ion-img>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col class="ion-text-center">
+                <ion-label>Docter OP</ion-label>
+              </ion-col>
+            </ion-row>
+          </ion-card>
         </div>
         </ion-col>
-        <ion-col size="6" class="ion-padding">
-          <div class="imgTile">
-         <ion-img src="https://cdn4.iconfinder.com/data/icons/medical-colorful-flat-svg/136/Medical_icons-14-512.png" class="ContentTiles"></ion-img>
+        <ion-col size="6">
+          <div>
+            <ion-card color="light">
+            <ion-row>
+              <ion-col class="ion-text-center">
+                <ion-img src="https://cdn4.iconfinder.com/data/icons/medical-colorful-flat-svg/136/Medical_icons-14-512.png" class="ContentTiles"></ion-img>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col class="ion-text-center">
+                <ion-label>108</ion-label>
+              </ion-col>
+            </ion-row>
+          </ion-card>
         </div>
         </ion-col>
-        <ion-col size="6" class="ion-padding">
-          <div class="imgTile">
-         <ion-img src="https://ngcollege.edu.in/wp-content/uploads/2017/10/Report-Writing-1.png" class="ContentTiles"></ion-img>
+        <ion-col size="6">
+          <div>
+            <ion-card color="light">
+            <ion-row>
+              <ion-col class="ion-text-center">
+                <ion-img src="https://ngcollege.edu.in/wp-content/uploads/2017/10/Report-Writing-1.png" class="ContentTiles"></ion-img>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col class="ion-text-center">
+                <ion-label>Reports</ion-label>
+              </ion-col>
+            </ion-row>
+          </ion-card>
         </div>
         </ion-col>
-        <ion-col size="6" class="ion-padding">
-          <div class="imgTile">
-         <ion-img src="https://cdn0.iconfinder.com/data/icons/health-icons-rounded/110/Medicine-2-512.png" class="ContentTiles"></ion-img>
+        <ion-col size="6">
+          <div>
+            <ion-card color="light">
+            <ion-row>
+              <ion-col class="ion-text-center">
+                <ion-img src="https://cdn0.iconfinder.com/data/icons/health-icons-rounded/110/Medicine-2-512.png" class="ContentTiles"></ion-img>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col class="ion-text-center">
+                <ion-label>Medicine</ion-label>
+              </ion-col>
+            </ion-row>
+          </ion-card>
         </div>
         </ion-col>
-        <ion-col size="6" class="ion-padding">
-          <div class="imgTile">
-         <ion-img src="https://images-na.ssl-images-amazon.com/images/I/41Kjbb9wYwL.png" class="ContentTiles"></ion-img>
+        <ion-col size="6">
+          <div>
+            <ion-card color="light">
+            <ion-row>
+              <ion-col class="ion-text-center">
+                <ion-img src="https://images-na.ssl-images-amazon.com/images/I/41Kjbb9wYwL.png" class="ContentTiles"></ion-img>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col class="ion-text-center">
+                <ion-label>Location</ion-label>
+              </ion-col>
+            </ion-row>
+          </ion-card>
         </div>
         </ion-col>
       </ion-row>

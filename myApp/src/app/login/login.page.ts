@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import {AuthService} from '../auth.service';
 
 @Component({
   selector: 'app-login',
@@ -8,13 +9,22 @@ import { Router } from '@angular/router';
 })
 export class LoginPage implements OnInit {
 
-  constructor(public router:Router) { }
+  public loginUserData ={}
+
+  constructor(public _auth:AuthService, public router:Router) { }
 
   ngOnInit() {
     
   }
-  login(){
-    this.router.navigate(['tabs'])
+  loginUser(){
+    this._auth.loginUser(this.loginUserData)
+    .subscribe(res => {
+      console.log(res)
+      localStorage.setItem('token', res.token)
+      this.router.navigate(['/members/tab2'])
+    },
+    err => console.log(err)
+    )
   }
 
 }

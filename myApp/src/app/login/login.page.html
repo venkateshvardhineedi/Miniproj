@@ -1,9 +1,35 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="primary">
     <ion-title>login</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-<ion-button routerLink="/members">Login</ion-button>
+  <ion-card>
+    <ion-card-header class="ion-no-padding">
+      <ion-img src="../../assets/login-image.jpg"></ion-img>
+    </ion-card-header>
+    <ion-card-content>
+      <form>
+        <div class="form-group">
+      <ion-item>
+        <ion-label position="floating">User Email</ion-label>
+        <ion-input [(ngModel)]="loginUserData.email" name="email"type="email"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Password</ion-label>
+        <ion-input [(ngModel)]="loginUserData.Password" name="password" type="password"></ion-input>
+      </ion-item>
+      <ion-row>
+        <ion-col size="4"></ion-col>
+        <ion-col size="4">
+          <ion-button (click)="loginUser()" color="secondary">Login</ion-button>
+        </ion-col>
+        <ion-col size="4"></ion-col>
+      </ion-row>
+        <ion-label><a>Forgot Password ?</a></ion-label>
+      </div>
+      </form>
+    </ion-card-content>
+  </ion-card>
 </ion-content>

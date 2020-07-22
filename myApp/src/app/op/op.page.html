@@ -6,19 +6,50 @@
     <ion-title class="ion-text-center">Schedule Appointment</ion-title>
   </ion-toolbar>
 </ion-header>
+<div>
+  <ion-row>
+    <ion-col class="ion-no-padding">
+      <ion-img src="https://img.freepik.com/free-vector/medical-concept-with-doctor-patients-flat-cartoon-hospital-hall_36082-495.jpg?size=626&ext=jpg"></ion-img>
+    </ion-col>
+  </ion-row>
+</div>
 <ion-content>
   <ion-grid>
     <ion-row>
       <ion-col>
-        <ion-item>
-          <ion-input type="text" placeholder="Name"></ion-input>
-        </ion-item>
-        <ion-item>
-          <ion-select placeholder="Select One">
-            <ion-select-option value="F">Fever</ion-select-option>
-            <ion-select-option value="H">Headache</ion-select-option>
-          </ion-select>
-        </ion-item>
+        <ion-card class="ion-padding" color="light">
+        <ion-list>
+          <ion-item>
+            <ion-label>Reason</ion-label>
+            <ion-select value="brown" okText="Okay" cancelText="Dismiss">
+              <ion-select-option value="Fever">Fever</ion-select-option>
+              <ion-select-option value="Headache">Headache</ion-select-option>
+              <ion-select-option value="Cold">Cold</ion-select-option>
+              <ion-select-option value="Kaff">Kaff</ion-select-option>
+            </ion-select>
+          </ion-item>
+          <ion-item>
+            <ion-label>Specialist</ion-label>
+            <ion-select value="brown" okText="Okay" cancelText="Dismiss">
+              <ion-select-option value="Cardiologist">Cardiologist</ion-select-option>
+              <ion-select-option value="Audiologist">Audiologist</ion-select-option>
+              <ion-select-option value="Dentist">Dentist</ion-select-option>
+              <ion-select-option value="ENT">ENT specialist</ion-select-option>
+              <ion-select-option value="Psychiatrists">Psychiatrists</ion-select-option>
+              <ion-select-option value="Radiologist">Radiologist</ion-select-option>
+              <ion-select-option value="Endocrinologist">Endocrinologist</ion-select-option>
+              <ion-select-option value="Neurologist">Neurologist</ion-select-option>
+              <ion-select-option value="Veterinarian">Veterinarian</ion-select-option>
+              <ion-select-option value="Orthopaedic">Orthopaedic surgeon</ion-select-option>
+            </ion-select>
+          </ion-item>
+          <ion-item>
+            <ion-label>Select Date</ion-label>
+            <ion-datetime displayFormat="DD MMM YY" placeholder="Select Date"></ion-datetime>
+          </ion-item>
+        </ion-list>
+        <ion-button shape="round" expand="block" class="ion-margin"><ion-icon name="search"></ion-icon>Search</ion-button>
+      </ion-card>
       </ion-col>
     </ion-row>
   </ion-grid>

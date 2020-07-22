@@ -3,7 +3,6 @@ import { Platform } from '@ionic/angular'
 declare var google;
 
 
-
 @Component({
   selector: 'app-bloodbank',
   templateUrl: './bloodbank.page.html',

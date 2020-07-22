@@ -3,19 +3,31 @@
     <ion-buttons slot="start">
       <ion-back-button routerLink="/members/tab2">BACK</ion-back-button>
     </ion-buttons>
-    <ion-title></ion-title>
+    <ion-title>Nearest Blood Banks</ion-title>
   </ion-toolbar>
 </ion-header>
 <ion-content >
   <div id="poidiv">
     
   </div>
-
-<div *ngFor="let x of pois" >
-  <ion-label>
-    <h2> {{x.name}} </h2>
-    <h2> {{x.rating}} </h2>
-    </ion-label>
-</div>
-
+<ion-grid>
+  <ion-row>
+    <ion-col>
+      <ion-card *ngFor="let x of pois" style="margin: 7px;">
+        <ion-row class="ion-padding">
+        <ion-col size="3">
+          <ion-avatar>
+            <img src={{x.icon}}>
+          </ion-avatar>
+        </ion-col>
+        <ion-col size="9">
+          <ion-label><b>{{x.name}}</b></ion-label>
+          <p class="ion-no-margin">Rating : {{x.rating}}</p>
+          <p class="ion-no-margin">Address : {{x.vicinity}}</p>
+        </ion-col>
+      </ion-row>
+    </ion-card>
+    </ion-col>
+  </ion-row>
+</ion-grid>
 </ion-content>
