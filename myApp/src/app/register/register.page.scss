@@ -1,0 +1,14 @@
+ion-card{
+    background: url(../../assets/register-image.jpg) no-repeat center;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+ion-item{
+    --ion-background-color:transparent;
+   // color:#2364d5;
+ }
+ ion-button{
+    --background:lightseagreen;
+ }

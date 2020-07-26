@@ -15,15 +15,16 @@ export class BloodbankPage {
    var gps= new google.maps.LatLng(16.496545, 81.880124);
    /* 28.430945599999998, 77.03660839999999 */
    var radius = 1000;
-   var type : [ 'restaurant' ];
-   this.GetNearestPlaces(gps,radius);
+   var types : ['hospital', 'health'];
+   this.GetNearestPlaces(gps,radius,types);
      })
   }
 
-  GetNearestPlaces(gps,radiusInmetre){
+  GetNearestPlaces(gps,radiusInmetre,types){
     var request ={
       location : gps,
-      radius : radiusInmetre
+      radius : radiusInmetre,
+      types : types
     }
 
     var container = document.getElementById('poidiv');
